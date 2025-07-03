@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Google Maps Extractor - Free</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="lib/fetch.umd.js"></script>
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/axios.min.js"></script>
+    <script src="js/util.js"></script>
+</head>
+
+<body>
+    <div id="maincontent" style="width: 100%">
+        <div id="content">
+            <!-- Header -->
+            <div class="header-row">
+                <h2>Google Maps Extractor - Free</h2>
+                <div class="subtitle">Extract business data from Google Maps with no restrictions</div>
+            </div>
+            
+            <!-- Search Section -->
+            <div class="search-section">
+                <input type="text" id="profileid" placeholder="Enter search term e.g., coffee shop near new york" class="search-input" value="coffee shop near new york" />
+                <button id="addprofilebtn" class="btn primary-btn">Search Google Maps</button>
+            </div>
+            
+            <!-- Status Section -->
+            <div id="extractionStatus" class="status-section">
+                <div id="statusMessage">Ready to extract data</div>
+                <div id="leadsCount" class="leads-count">Leads: 0</div>
+            </div>
+            
+            <!-- Export Section -->
+            <div class="export-section">
+                <button id="exportDataBtn" class="btn secondary-btn">Export Leads to CSV</button>
+                <button id="clearDataBtn" class="btn clear-btn">Clear Data</button>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer-section">
+                <a href="https://forms.gle/p5n1rDnwmrBWMQ3X6" target="_blank">
+                    Any Suggestions? Feel free to contact us!
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/popup.js"></script>
+
+</html>
